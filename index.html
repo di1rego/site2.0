@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 2.0</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#" class="arrow-up nav-link fs-4 bg-primary rounded-3 text-white text-center z-1">&#8593;</a>
+    <!-- header -->
+    <header class="wrapper sticky-top p-0 shadow">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Логотип</a>
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="show collapse navbar-collapse flex-grow-0 gap-2" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex gap-2">
+                            <i class="bi bi-telephone mt-1 fs-5"></i>
+                            <a class="nav-link text-primary" href="tel:+79999999999"><u>+7 (999) 999-99-99</u></a>
+                        </li>
+                        <li class="border-bottom"></li>
+                        <li class="nav-item"><a class="nav-link" href="#slider">Слайдер</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#card">Карточки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#form">Форма</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    </ul>
+                    <button class="btn bg-primary text-white btn-basic d-block m-auto" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal9">Регистрация</button>
+                </div>
+            </div>
+        </nav>
+        <ul class="social-link list-unstyled d-flex justify-content-end gap-2">
+            <li><a href="#"><img src="img/ok.png" alt="ok"></a></li>
+            <li><a href="#"><img src="img/tg.png" alt="tg"></a></li>
+            <li><a href="#"><img src="img/vk.png" alt="vk"></a></li>
+        </ul>
+    </header>
+    <div class="modal" id="exampleModal9">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form">
+                        <div class="mb-3">
+                            <label for="#" class="form-label">ФИО:</label>
+                            <input type="text" class="form-control" id="#" placeholder="Введите текст" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="#" class="form-label">Форма участия:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="#">
+                                <label class="form-check-label" for="#">Очно</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="#">
+                                <label class="form-check-label" for="#">Онлайн</label>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="#" class="form-label">Дта участия:</label>
+                                <input type="date" class="form-control" id="#" required>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <button type="reset" class="btn bg-primary text-white w-50">Очистить</button>
+                            <button type="submit" class="btn bg-primary text-white w-50">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- slider -->
+    <section id="slider" class="wrapper p-0">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></button>
+                <button data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Метка первого слайда</h1>
+                        <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- card -->
+    <section id="card" class="wrapper">
+        <h2 class="text-center mb-4">Карточки</h2>
+        <div class="card-flex d-flex flex-wrap justify-content-center">
+            <div class="card shadow">
+                <img src="img/1.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title fs-4">Заголовок для карточки</h3>
+                    <p class="card-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Прямо, ее. Города строчка которой инициал снова гор, великий языкового.</p>
+                    <button class="btn bg-primary text-white w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Подробнее</button>
+                    <div class="modal" id="exampleModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты.
+                                        Гор переписывается дорогу проектах текстами. Залетают возвращайся своего наш
+                                        строчка.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow">
+                <img src="img/2.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title fs-4">Заголовок для карточки</h3>
+                    <p class="card-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Прямо, ее. Города строчка которой инициал снова гор, великий языкового.</p>
+                    <button class="btn bg-primary text-white w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Подробнее</button>
+                    <div class="modal" id="exampleModal2">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты.
+                                        Гор переписывается дорогу проектах текстами. Залетают возвращайся своего наш
+                                        строчка.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow">
+                <img src="img/3.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title fs-4">Заголовок для карточки</h3>
+                    <p class="card-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Прямо, ее. Города строчка которой инициал снова гор, великий языкового.</p>
+                    <button class="btn bg-primary text-white w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">Подробнее</button>
+                    <div class="modal" id="exampleModal3">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex flex-wrap">
+                                        <img src="img/1.jpg" alt="..." class="w-50 p-1">
+                                        <img src="img/2.jpg" alt="..." class="w-50 p-1">
+                                        <img src="img/3.jpg" alt="..." class="w-50 p-1">
+                                        <img src="img/4.jpg" alt="..." class="w-50 p-1">
+                                    </div>
+                                    <p class="mt-3">Далеко-далеко за словесными горами в стране гласных и согласных
+                                        живут рыбные
+                                        тексты.
+                                        Гор переписывается дорогу проектах текстами. Залетают возвращайся своего наш
+                                        строчка.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow">
+                <img src="img/4.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title fs-4">Заголовок для карточки</h3>
+                    <p class="card-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Прямо, ее. Города строчка которой инициал снова гор, великий языкового.</p>
+                    <button class="btn bg-primary text-white w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal4">Подробнее</button>
+                    <div class="modal" id="exampleModal4">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/3.jpg" alt="..." class="w-100">
+                                    <p class="mt-3">Далеко-далеко за словесными горами в стране гласных и согласных
+                                        живут рыбные
+                                        тексты.
+                                        Гор переписывается дорогу проектах текстами. Залетают возвращайся своего наш
+                                        строчка.</p>
+                                    <img src="img/4.jpg" alt="..." class="w-100 mt-5">
+                                    <p class="mt-3">Далеко-далеко за словесными горами в стране гласных и согласных
+                                        живут, рыбные тексты. Курсивных домах заголовок эта она парадигматическая образ
+                                        своего переписывается то!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- form -->
+    <section id="form" class="wrapper">
+        <h2 class="text-center mb-4">Форма</h2>
+        <div class="form-width shadow-lg p-3 rounded-3 m-auto">
+            <form class="form">
+                <div class="mb-3">
+                    <label for="#" class="form-label">ФИО:</label>
+                    <input type="text" class="form-control" id="#" placeholder="Введите текст" required>
+                </div>
+                <div class="mb-3">
+                    <label for="#" class="form-label">Форма участия:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="#">
+                        <label class="form-check-label" for="#">Очно</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="#">
+                        <label class="form-check-label" for="#">Онлайн</label>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="#" class="form-label">Дта участия:</label>
+                        <input type="date" class="form-control" id="#" required>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <button type="reset" class="btn bg-primary text-white w-50">Очистить</button>
+                    <button type="submit" class="btn bg-primary text-white w-50">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="contact" class="wrapper pt-3 pb-4 bg-white shadow-lg d-flex justify-content-between flex-wrap gap-2">
+        <div>
+            <p class="m-0">&#169; Рахимов Р., 2024</p>
+        </div>
+        <ul class="list-unstyled d-flex gap-4 m-0 text-primary">
+            <li><a href="#slider" class="nav-link">Слайдер</a></li>
+            <li><a href="#card" class="nav-link">Карточки</a></li>
+            <li><a href="#form" class="nav-link">Форма</a></li>
+        </ul>
+        <div class="footer-block">
+            <p class="m-0">г.Москва, ул. Казанская д.24 кв.12</p>
+            <a href="tel:+79999999999" class="d-block mb-2">+7 (999) 999-99-99</a>
+            <ul class="social-link list-unstyled d-flex gap-2 m-0">
+                <li><a href="#"><img src="img/ok.png" alt="ok"></a></li>
+                <li><a href="#"><img src="img/tg.png" alt="tg"></a></li>
+                <li><a href="#"><img src="img/vk.png" alt="vk"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
